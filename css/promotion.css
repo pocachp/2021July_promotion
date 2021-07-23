@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+ol{
+    list-style: none;
+}
+
+body, ol {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    /*position: fixed; 스크롤시 고정시켜야함*/
+    height: 66px;
+    background: url("../image/logo.png") no-repeat 0 0;
+    background-position: 20%;
+    background-color: rgb(64, 64, 64);
+    opacity: 0.75;
+    z-index: 0;
+}
+
+.foodwith {
+    position: absolute;
+    left: 310px;
+    margin-top: 20px;
+    width: 120px;
+    height: 30px;
+}
+
+.invite__wrap {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    margin: 0 auto;
+    background: url("../image/section_invite.jpg") no-repeat 0 0;
+    background-position: center;
+    background-color: #fff;
+}
+
+.creator__wrap {
+    position: relative;
+    width: 100%;
+    height: 822px;
+    margin: 0 auto;
+    background: url("../image/section_creator.jpg") no-repeat 0 0;
+    background-position: center;
+    background-color: #f9939d;
+}
+
+
+.invite__blind, .creator__blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
