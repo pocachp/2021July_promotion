@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
-ol{
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+ol {
     list-style: none;
 }
 
@@ -47,8 +51,84 @@ body, ol {
     background-color: #f9939d;
 }
 
+.store__wrap {
+    position: relative;
+    width: 100%;
+    height: 1084px;
+    margin: 0 auto;
+    background: url("../image/section_store.jpg") no-repeat 0 0;
+    background-position: center;
+    background-color: #d5e43f;
+}
 
-.invite__blind, .creator__blind {
+.store__discount_rate {
+    width: 980px;
+}
+
+.each_discount_rate {
+    margin-right: 20px;
+    text-align: center;
+    /* 한줄 말줄임도 넣어주기 */
+}
+
+.each_discount_rate > a {
+    width: 230px;
+    height: 230px;
+}
+.each_discount_rate > a > img {
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.discount {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    opacity: 0;
+}
+
+.discount__rate {
+    font-size: 65px;
+    color: #fff;
+}
+
+.discount__time {
+    margin-top: 0px;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.first__row, .second__row {
+    display: flex;
+}
+
+.first__row {
+    position: absolute;
+    top: 290px;
+    left: 360px;
+}
+
+.second__row {
+    position: absolute;
+    top: 660px;
+    left: 360px;
+}
+
+.product__name, .won {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #1b1d21;
+}
+
+.product__price {
+    margin-top: 5px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.invite__blind, .creator__blind, .store__blind, .discount {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
