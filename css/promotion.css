@@ -4,11 +4,11 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-ol {
+ol, ul {
     list-style: none;
 }
 
-body, ol {
+body, ol, ul {
     padding: 0;
     margin: 0;
 }
@@ -16,6 +16,7 @@ body, ol {
 .header {
     /*position: fixed; 스크롤시 고정시켜야함*/
     height: 66px;
+    /*background-attachment: fixed;*/
     background: url("../image/logo.png") no-repeat 0 0;
     background-position: 20%;
     background-color: rgb(64, 64, 64);
@@ -62,7 +63,28 @@ body, ol {
 }
 
 .store__discount_rate {
+    /*
+    position:absolute;
+    top: 290px;
+    */
     width: 980px;
+}
+
+.first__row, .second__row {
+    display: flex;
+}
+
+.first__row {
+    position: absolute;
+    top: 290px;
+    left: 360px;
+}
+
+.second__row {
+    position: absolute;
+    /*top: 370px;*/ /*230+140*/
+    top: 660px;
+    left: 360px;
 }
 
 .each_discount_rate {
@@ -99,23 +121,6 @@ body, ol {
     color: #fff;
 }
 
-
-.first__row, .second__row {
-    display: flex;
-}
-
-.first__row {
-    position: absolute;
-    top: 290px;
-    left: 360px;
-}
-
-.second__row {
-    position: absolute;
-    top: 660px;
-    left: 360px;
-}
-
 .product__name, .won {
     margin-top: 20px;
     font-size: 20px;
@@ -128,7 +133,71 @@ body, ol {
     font-weight: bold;
 }
 
-.invite__blind, .creator__blind, .store__blind, .discount {
+.recipe__wrap {
+    position: relative;
+    width: 100%;
+    height: 1030px;
+    margin: 0 auto;
+    background-image: url("../image/section_recipe.png"), url("../image/pattern_recipe.png"),
+                        url("../image/go_recipe.gif");
+    background-repeat: no-repeat, repeat-x, no-repeat;
+    background-position: 50% 30%, center, 50% 90%;
+    background-color: #b893f9;
+}
+
+.view__recipe {
+    position: absolute;
+    left: 690px;
+    bottom: 93px;
+    width: 310px;
+    height: 91px;
+}
+
+.no_oven_straw {
+    position: absolute;
+    width: 480px;
+    height: 482px;
+    left: 355px;
+    top: 304px;
+}
+
+.banana_pudding {
+    position: absolute;
+    width: 480px;
+    height: 482px;
+    top: 304px;
+    left: 855px;
+}
+
+.view__recipe:hover {
+    background: url("../image/go_recipe_over.gif");
+}
+
+.recipe__wrap {
+    position: relative;
+    width: 100%;
+    height: 1030px;
+    margin: 0 auto;
+    background-image: url("../image/section_recipe.png"), url("../image/pattern_recipe.png"),
+                        url("../image/go_recipe.gif");
+    background-repeat: no-repeat, repeat-x, no-repeat;
+    background-position: 50% 30%, center, 50% 90%;
+    background-color: #b893f9;
+}
+
+.faq__wrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("../image/title_faq.gif");
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.faq__container {
+    margin-top: 20px;
+}
+.invite__blind, .creator__blind, .store__blind, .discount, .recipe__blind {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
