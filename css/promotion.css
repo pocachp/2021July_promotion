@@ -197,6 +197,16 @@ body, ol, ul {
 .faq__container {
     margin-top: 20px;
 }
+
+.footer__right {
+    margin-top: 100px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 43%;
+    background-color: #e0e4eb;
+    font-size: 18px;
+}
 .invite__blind, .creator__blind, .store__blind, .discount, .recipe__blind {
     position: absolute;
     clip: rect(0 0 0 0);
